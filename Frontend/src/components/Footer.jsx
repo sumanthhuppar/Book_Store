@@ -49,7 +49,7 @@ function Footer() {
           </div>
         </nav>
         <aside>
-          <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+          <p>Copyright © 2024 - All right reserved by <a href="https://github.com/sumanthhuppar" target="_blank" className="link link-hover btn-link">Sumanth H</a> & <a href="https://github.com/Vikranthraosb" target="_blank" className="link link-hover btn-link">Vikranth</a></p>
         </aside>
       </footer>
     </div>
