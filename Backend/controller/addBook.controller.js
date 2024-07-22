@@ -1,15 +1,8 @@
-import express from "express";
-import { getBook } from "../controller/book.controller.js";
-import Book from "../model/book.model.js";
+import Book from '../model/book.model.js';
 
-
-
-const router = express.Router();
-
-router.get("/", getBook);
-
-// POST request to add a new book
-router.post('/add', async (req, res) => {
+// Function to add a new book
+export const addBook = async (req, res) => {
+     
     const { name, price, category, image, title } = req.body;
 
     try {
@@ -26,6 +19,4 @@ router.post('/add', async (req, res) => {
     } catch (error) {
         res.status(400).json({ message: error.message });
     }
-});
-
-export default router;
+};
